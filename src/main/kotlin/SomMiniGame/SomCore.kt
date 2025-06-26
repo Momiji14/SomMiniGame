@@ -4,8 +4,13 @@ import org.bukkit.plugin.java.JavaPlugin
 
 class SomCore : JavaPlugin() {
 
+    companion object {
+        lateinit var Plugin: JavaPlugin
+            private set
+    }
+
     override fun onEnable() {
-        // Plugin startup logic
+        Plugin = this
     }
 
     override fun onDisable() {
