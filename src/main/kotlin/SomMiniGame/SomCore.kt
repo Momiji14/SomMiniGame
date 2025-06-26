@@ -1,5 +1,6 @@
 package SomMiniGame
 
+import SomMiniGame.Events.PlayerEvent
 import org.bukkit.plugin.java.JavaPlugin
 
 class SomCore : JavaPlugin() {
@@ -11,6 +12,8 @@ class SomCore : JavaPlugin() {
 
     override fun onEnable() {
         Plugin = this
+
+        server.pluginManager.registerEvents(PlayerEvent(), this)
     }
 
     override fun onDisable() {
