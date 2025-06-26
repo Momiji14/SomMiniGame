@@ -1,0 +1,4 @@
+name: SomMiniGame
+version: '1.0-SNAPSHOT'
+main: SomMiniGame.SomCore
+api-version: '1.21'
